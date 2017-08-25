@@ -1,5 +1,5 @@
-let ArrayFunctions = function (){
-let array = [ 1,2,3,4,5];
+let ArrayFunctions = function (...array){
+return (array(1,2,3,4,5));
 }
 
 
@@ -7,17 +7,18 @@ let array = [ 1,2,3,4,5];
 // ArrayFunctions.printSpecial([12, 33, 144, 122])
 // 12 -- 33 -- 144 -- 122
 
-ArrayFunctions.prototype.printSpecial = function (array) {
-  return array.join(" --- ");
+ArrayFunctions.printSpecial = function (array) {
+  for (let i = 0; i < array.length(..."---"); i++) {};
+  return array;
 };
 
 // 2) Define a function that takes an array with numbers and returns another array where each element contains double each element in the array
 // ArrayFunctions.doubleMyArray([10, 20, 35, 12])
 // [20, 40, 70, 24]
 
- ArrayFunctions = array.map((n)=> n * 2 );
-return(array):
-;
+ArrayFunctions.doubleMyArray = array.map((n)=> n * 2 );
+return(array);
+
 
 // 3) Define a function that takes an array with numbers and returns the result of multiplying each element by ten to the power of the position it's in:
 // ArrayFunctions.superPower([1,2,3,4,5])
